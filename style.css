@@ -1,42 +1,235 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+html {
+    overflow: auto;
+}
 body {
-    height: 100vh;
+    /* Margins */
     margin: 0;
-    background: grey url(images/background2.jpeg) repeat scroll top left; 
-    background-size: cover;
-    overflow: hidden;
+
+    /* Text styles */
     font-family: Roboto, sans-serif;
+    color: #F2F2F2;
+
+    /* Flexbox */
     display: flex;
     flex-flow: column;
 }
 
-.header,
-.footer {
+.hero-page {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Flexbox */
+    display: flex;
+    flex-flow: column;
+
+    /* Background styles . Its applied a first background with gradient (two colors--same color)*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/background2.jpg) no-repeat fixed top center;
+    background-size: cover;
+}
+
+.header {
+    /* Flexbox */
     display: flex;
     justify-content: space-between;
     
 }
 
 .logo {
+    /* Padding and margins */
     padding-left: 16px;
+  
 }
 
 .links-right {
+    /* Flexbox */
     display: flex;
-   
+
+    /* Padding */
+    padding-right: 25px;
+}
+
+.hero-container {
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex: 1 1 auto;
+
+    /* Padding */
+    padding-top: 100px;
+
+    /* Text style */
+    text-align: center;
+}
+
+.hero-text {
+    /* Flexbox */
+    display: flex;
+    flex-flow: column;
+    max-width: 400px;
+    align-items: center;
+}
+
+.hero-text h1 {
+    /* Text style */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero-text .button {
+    /* Positioning and sizing */
+    display: block;
+    width: 150px;
+
+    /* Padding and margins */
+    padding: 0.5em;
+    margin-top: 50px;
+
+    /* Text styles */
+    font-size: 1em;
+
+    /* Border styles */
+    border: 3px solid #F2F2F2;
+    border-radius: 10px;
+}
+
+.info-board {
+    /* Sizing */
+    min-height: 350px;
+
+    /* Flexbox */
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    justify-content: space-around;
+
+    text-align: center;
+
+    /* Background style */
+    background-color: #151515;
+}
+
+
+.info-list {
+    /* Flexbox */
+    display: flex;
+    justify-content: space-around;
+}
+
+.info-list p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.quote {
+    /* Flex */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    /* Sizing */
+    min-height: 200px;
+    
+    /* Text style */
+    text-align: center;
+
+    /* Background styles . Its applied a first background with gradient (two colors--same color)*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/background2.jpg) no-repeat fixed bottom center;
+    background-size: cover
+}
+
+.contact-container {
+    /* Sizing */
+    min-height: 200px;
+
+    /* Flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Background style */
+    background-color: #151515;
+}
+
+.contact-box {
+    /* Sizing */
+    max-width: 600px;
+    max-height: 150px;
+
+    /* Flexbox */
+    display: flex;
+
+    /* Background style */
+    background-color: #404040;
+    border-radius: 10px;
+}
+
+.contact-text {
+    min-width: 300px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 12px;
+}
+
+.contact-buttons {
+    display: flex;
+    min-width: 150px;
+    align-items: center;
+}
+
+.contact-buttons .button {
+    /* Positioning and sizing */
+    display: block;
+    min-width: 75px;
+
+    /* Padding and margins */
+    padding: 0.5em;
+    margin: 16px;
+
+    /* Text styles */
+    font-size: 1em;
+    text-align: center;
+
+    /* Border styles */
+    border: 3px solid #F2F2F2;
+    border-radius: 10px;
+}
+
+.footer {
+    /* Background styles . Its applied a first background with gradient (two colors--same color)*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(images/background2.jpg) no-repeat fixed bottom center;
+    background-size: cover;
+
+    /* Text styles */
+    text-align: center;
+    font-size: 0.8em;
 }
 
 a {
+    /* Text style */
     text-decoration: none;
     color: #F2F2F2;
 }
 
 ul {
+    /* Flexbox */
     display: flex;
+
+    /* Text styles */
     list-style-type: none;
+
+    /* Padding and margins */
     padding-right: 16px;
     gap: 16px;
+}
+
+img {
+    border-radius: 10px;
 }
 
 
